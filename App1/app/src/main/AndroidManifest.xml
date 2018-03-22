@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app1">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".registerActivity"
+            android:theme="@style/MyCustomTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".paltesActivity"
+            android:theme="@style/MyCustomTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".blogsActivity"
+            android:theme="@style/MyCustomTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activities.sendBlog"
+            android:theme="@style/MyCustomTheme" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activities.openBlog"
+            android:theme="@style/MyCustomTheme" />
+        <activity android:name=".activities.responseActivity" android:theme="@style/MyCustomTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_main_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="always" />
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/file"
+        android:title="File">
+        <menu>
+            <item
+                android:id="@+id/create_new"
+                android:title="create_new" />
+            <item
+                android:id="@+id/open"
+                android:title="open" />
+        </menu>
+    </item>
+</menu>
